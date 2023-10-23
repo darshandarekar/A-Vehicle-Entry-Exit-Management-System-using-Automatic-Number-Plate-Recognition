@@ -56,7 +56,7 @@ Follow these steps to set up and run the project:
        VEHICLE_NO VARCHAR(250)
    );
 
-6. Registration data, including employee IDs, names, phone numbers, and vehicle numbers, are stored in the *anpr* table in the *parking* database.
+6. Registration data, including employee IDs, names, phone numbers, and vehicle numbers, are stored in the `anpr` table in the `parking` database.
    
 7. Run the application:
 
