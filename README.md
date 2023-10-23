@@ -1,0 +1,1 @@
+# A-Vehicle-Entry-Exit-Management-System-using-Automatic-Number-Plate-Recognition
