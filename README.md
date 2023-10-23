@@ -26,3 +26,38 @@ Follow these steps to set up and run the project:
 
    # On Windows
    python -m venv venv
+
+2. Activate the virtual environment:
+   
+   ```bash
+   # On macOS and Linux
+   source venv/bin/activate
+   
+   # On Windows
+   venv\Scripts\activate
+
+3. Install project dependencies:
+   
+   ```bash
+   pip install -r requirements.txt
+
+4. Configure the database connection in my_db_other.py. Update the host, user, database, and passwd settings to match your MySQL configuration.
+
+5. Create a MySQL database and table. Run the following SQL commands to create the anpr table:
+
+   ```sql
+   CREATE DATABASE parking; -- Create the 'parking' database
+   USE parking; -- Use the 'parking' database
+   
+   CREATE TABLE anpr (
+       EMP_ID INT PRIMARY KEY,
+       NAME VARCHAR(250) NOT NULL,
+       PHONE_NO INT NOT NULL,
+       VEHICLE_NO VARCHAR(250)
+   );
+
+6. Run the application:
+
+   ```bash
+   python -m app.py
+
